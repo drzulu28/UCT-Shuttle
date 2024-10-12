@@ -1,10 +1,10 @@
 // List of valid usernames and passwords
 const validLogins = [
-    { username: "NqobaniX124", password: "DevZulu900" },
-    { username: "stu2", password: "pass2" },
-    { username: "stu3", password: "pass3" },
-    { username: "stu4", password: "pass4" },
-    { username: "Mickey800", password: "SEMpofu", redirectPage: "Routine/UserFeedbackHistory.html" }
+    { username: "NqobaniX124", password: "DevZulu900", redirectPage: "Routine/schedule.html" }},
+    { username: "stu2", password: "pass2", redirectPage: "Routine/schedule.html" },
+    { username: "stu3", password: "pass3", redirectPage: "Routine/schedule.html" },
+    { username: "stu4", password: "pass4", redirectPage: "Routine/schedule.html" },
+    { username: "stu5", password: "pass5", redirectPage: "Routine/UserFeedbackHistory.html" }
 ];
 
 // Function to validate login credentials
@@ -20,9 +20,9 @@ function validateLogin(event) {
         login.username === username && login.password === password
     );
 
-    if (isValid) {
-        // Redirect to the schedule page on successful login
-        window.location.href = "Routine/schedule.html"; // Update with your actual URL
+    if (userLogin) {
+        // Redirect to the specific page for the logged-in user
+        window.location.href = userLogin.redirectPage;
     } else {
         alert("Invalid username or password.");
     }
