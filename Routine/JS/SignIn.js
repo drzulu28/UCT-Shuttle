@@ -16,7 +16,7 @@ function validateLogin(event) {
     const password = document.getElementById("password").value.trim();
 
     // Check if the username and password are valid
-    const userLogin = validLogins.find(login => 
+    const userLogin = validLogins.some(login => 
         login.username === username && login.password === password
     );
 
