@@ -42,6 +42,7 @@ function submitFeedback() {
     // Clear the entire localStorage
     // localStorage.clear();
 
-    // Redirect to the feedback history page to display all feedback
-    window.location.href = "UserFeedbackHistory.html";
+ // Redirect to the thank you page
+    window.location.href = "Thankyou.html";
+
 }
