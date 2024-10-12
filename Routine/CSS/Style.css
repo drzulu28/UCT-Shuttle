@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('BG Image/UCT Shuttle.png'); /* image URL */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white; /* Change text color for visibility */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.9); /*Black with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a fixed width */
+}
+.container2 {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+.container3 {
+    padding: 50px;                         /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.9);  /* Dark background */
+    color: white;                          /* White text color for better readability */
+    border-radius: 8px;                   /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 90%;                        /* Set a maximum width of 90% */
+    width: 600px;                          /* Fallback fixed width */
+    margin: 0 auto;                       /* Center the container */
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Text color for the header */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid white;  /* Changed border color to white */
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: navy;
+    border: 1px solid white;  /* Changed border color to white */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#exitButton {
+    width: 80px;       /* Set a fixed width for the button */
+    height: 40px;       /* Set a fixed height for the button */
+    background-color: navy; /* Button background color */
+    border: 1px solid white;  /* Changed border color to white */
+    color: white;       /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;     /* Pointer cursor on hover */
+    font-size: 16px;    /* Font size */
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: white;              /* Set the link text color to white */
+    text-decoration: none;     /* Remove the underline from the link */
+}
+select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;  /* Changed border color to white */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: navy;
+    color: white;
+}
+.feedback-section {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+    display: flex;               /* Align elements in a row */
+    justify-content: center;      /* Center the items horizontally */
+    align-items: center;          /* Vertically center the items */
+    gap: 20px;                    /* Add space between the paragraph and buttons */
+}
+
+.feedback-section button {
+    width: 45px;                  /* Set width and height to make button a square */
+    height: 35px;
+    font-size: 16px;              /* Font size for button text */
+    cursor: pointer;
+    background-color: navy;
+    border: 1px solid white;  /* Changed border color to white */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;                /* Use flex to center text inside the button */
+    justify-content: center;      /* Center text horizontally */
+    align-items: center;          /* Center text vertically */
+    transition: background-color 0.3s ease;
+}
+.feed-section{
+    margin-top: 0px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+    display: flex;               /* Align elements in a row */
+    justify-content: center;      /* Center the items horizontally */
+    align-items: center;          /* Vertically center the items */
+    gap: 20px;                    /* Add space between the paragraph and buttons */
+}
+.feed-section button {
+    width: 100px;                  /* Set width and height to make button a square */
+    height: 35px;
+    font-size: 16px;              /* Font size for button text */
+    cursor: pointer;
+    background-color: navy;
+    border: 1px solid white;  /* Changed border color to white */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;                /* Use flex to center text inside the button */
+    justify-content: center;      /* Center text horizontally */
+    align-items: center;          /* Center text vertically */
+    transition: background-color 0.3s ease;
+}
+label {
+    display: block;            /* Block display for labels (default behavior) */
+    margin-bottom: 5px;       /* Space below labels */
+    font-weight: bold;         /* Bold text for labels */
+    text-align: left;          /* Align text to the left */
+}
+
+
+/* input[type="text"], */
+textarea {
+    width: 100%;                /* Width set to 90% of the container */
+    padding: 10px;            /* Padding inside the inputs */
+    margin: 0 auto 5px;      /* Center horizontally and space below */
+    border: 1px solid #ccc;   /* Light gray border */
+    border-radius: 4px;       /* Rounded corners */
+    font-size: 16px;          /* Font size for readability */
+    display: block;            /* Ensure they are block elements */
+}
+textarea {
+    resize: vertical;          /* Allow vertical resizing only */
+}

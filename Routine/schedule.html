@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCT Shuttle Schedule</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="JS/schedule.js"></script>
+</head>
+<body>
+    <div class="container2">
+        <h2>UCT Shuttle Schedule</h2>
+        <label for="route">Select Route:</label>
+        <select id="route" onchange="updateSchedule()">
+            <option value="">--Select a route--</option>
+            <option value="Route A">Route A</option>
+            <option value="Route B">Route B</option>
+            <option value="Route C">Route C</option>
+            <option value="Route D">Route D</option>
+            <option value="Route E">Route E</option>
+        </select>
+
+        <table id="scheduleTable">
+            <!-- Schedule will be populated here -->
+        </table>
+        <!-- Feedback section -->
+        <div class="feedback-section">
+            <p>Did you find what you’re looking for?</p>
+            <button onclick="handleYesClick()">Yes</button>  <!-- Calls the function when clicked -->
+            <!-- <button>No</button> -->
+            <button onclick="handleNoClick()">No</button>  <!-- Calls the function when clicked -->
+        </div>
+    </div>
+    <script src="JS/YesFeedback.js"></script>
+    <script src="JS/NoFeedback.js"></script>
+
+</body>
+</html>
