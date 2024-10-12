@@ -13,5 +13,5 @@ window.onload = displayFeedbackHistory;
 
 // Logout function to redirect to sign-in page
 function logout() {
-    window.location.href = "../index.html";
+    window.location.href = "../SignIn.html";
 }
