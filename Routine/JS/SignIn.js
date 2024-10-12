@@ -1,6 +1,6 @@
 // List of valid usernames and passwords
 const validLogins = [
-    { username: "stu1", password: "pass1" },
+    { username: "NqobaniX124", password: "DevZulu900" },
     { username: "stu2", password: "pass2" },
     { username: "stu3", password: "pass3" },
     { username: "stu4", password: "pass4" },
