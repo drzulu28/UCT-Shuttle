@@ -49,6 +49,7 @@ function updateSchedule() {
         const headerCell2 = document.createElement("th");
         headerCell1.textContent = "Stop";
         headerCell2.textContent = "Departure Time";
+        headerCell2.colSpan =5;
         headerRow.appendChild(headerCell1);
         headerRow.appendChild(headerCell2);
         scheduleTable.appendChild(headerRow);
