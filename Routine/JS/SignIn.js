@@ -1,6 +1,6 @@
 // List of valid usernames and passwords
 const validLogins = [
-    { username: "NqobaniX124", password: "DevZulu900", redirectPage: "Routine/schedule.html" }},
+    { username: "NqobaniX124", password: "DevZulu900", redirectPage: "Routine/schedule.html" },
     { username: "stu2", password: "pass2", redirectPage: "Routine/schedule.html" },
     { username: "stu3", password: "pass3", redirectPage: "Routine/schedule.html" },
     { username: "stu4", password: "pass4", redirectPage: "Routine/schedule.html" },
@@ -16,13 +16,14 @@ function validateLogin(event) {
     const password = document.getElementById("password").value.trim();
 
     // Check if the username and password are valid
-    const userLogin = validLogins.some(login => 
+    const userLogin = validLogins.find(login => 
         login.username === username && login.password === password
     );
 
     if (userLogin) {
         // Redirect to the specific page for the logged-in user
         window.location.href = userLogin.redirectPage;
+
     } else {
         alert("Invalid username or password.");
     }
