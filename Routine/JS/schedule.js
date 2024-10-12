@@ -80,6 +80,7 @@ const schedules = {
         { stop: "Forest Hill", times: ["09:05 PM", "10:05 PM", "11:05 PM", "12:05 AM", "01:05 AM"] },
         { stop: "Groote Schuur Res", times: ["09:10 PM", "10:10 PM", "11:10 PM", "12:10 AM", "01:10 AM"] },
         { stop: "Tugwell", times: ["09:10 PM", "10:10 PM", "11:10 PM", "12:10 AM", "01:10 AM"] },
+    ],
 };
 
 function updateSchedule() {
