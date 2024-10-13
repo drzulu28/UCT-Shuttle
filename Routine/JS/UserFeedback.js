@@ -47,14 +47,17 @@ function submitFeedback() {
 
         // Clear the entire localStorage
         // localStorage.clear();
-
-        // Redirect to the feedback history page to display all feedback
-        // window.location.href = "UserFeedbackHistory.html";
+        // Function to clear localStorage and provide user feedback
 
         // Redirect to the thank you page
         window.location.href = "Thankyou.html";
-            }
-            
-
+        }
+}
+function clearStorage() {
+    // Confirm action with the user before clearing
+    if (confirm("Are you sure you want to clear all stored data?")) {
+        localStorage.clear();
+        alert("Storage cleared successfully.");
+    }
 }
 
