@@ -16,22 +16,7 @@
 
         <!-- Feedback history will be dynamically loaded here -->
         <div id="feedbackHistory"></div>
-    <!-- Firebase SDKs -->
-    <!-- Firebase App (Core SDK) -->
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
-    <!-- Firebase Firestore SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js"></script>
 
-    <script>
-        // Firebase configuration
-        const firebaseConfig = {
-
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-    </script>
         <!-- Logout Button Form -->
         <form id="UserFeedbackHistoryForm" onsubmit="event.preventDefault(); logout();">
             <button type="submit">Logout</button>
@@ -43,3 +28,4 @@
 
 </body>
 </html>
+
