@@ -41,3 +41,17 @@
     align-items: center; /* Centers the button vertically */
 
 }
+.btn-clear{
+    width: 100px;                  /* Set width and height to make button a square */
+    height: 35px;
+    background-color: #333333; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px; /* Rounded corners */
+    display: center;
+    align-items: center; /* Centers the button vertically */
+}
+
