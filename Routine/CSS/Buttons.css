@@ -16,7 +16,7 @@
     border-radius: 14px; /* Rounded corners */
 }
 
-.btn-back{
+.btn-back, .btn-back1{
     width: 100px;                  /* Set width and height to make button a square */
     height: 35px;
     background-color: #4A4A4A; /* Dark gray for an elegant look */
