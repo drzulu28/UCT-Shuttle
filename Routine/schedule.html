@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCT Shuttle Schedule</title>
     <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Buttons.css">
+
     <script src="JS/schedule.js"></script>
 </head>
 <body>
@@ -32,15 +34,14 @@
         </table>
         <!-- Feedback section -->
         <div class="feedback-section">
-            <p>Ratings and review</p>
-            <!-- <button onclick="handleYesClick()">Yes</button>  Calls the function when clicked -->
-            <!-- <button>No</button> -->
+            <h2>Ratings and Review</h2>
         </div>
-        <button onclick="handleNoClick()">Review page</button>  <!-- Calls the function when clicked -->
-
-    </div>
-    <script src="JS/YesFeedback.js"></script>
-    <script src="JS/NoFeedback.js"></script>
+        <div class="action-buttons">
+            <button class="btn-logout" onclick="logout()">Logout</button>
+            <button class="btn-review" onclick="handleNoClick()">Review</button>
+        </div>
+        <script src="JS/UserFeedbackHistory.js"></script>
+        <script src="JS/NoFeedback.js"></script>
 
 </body>
 </html>
