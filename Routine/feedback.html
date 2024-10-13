@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +5,7 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="CSS/Style.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="CSS/Rating.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSS/Buttons.css">
 
 </head>
 <body>
@@ -44,11 +44,17 @@
                 <label for="star1" title="1 star">☆</label>
             </div>
             <br><br>
+
+
+            <div class="action-buttons">
+                <button class="btn-back" onclick="handleBackClick()">Back</button>
+                <button class="btn-submit">Submit</button>
+            </div>
     
-            <button type="submit">Submit Feedback</button>
+
         </form>
     </div>
-    <!-- <script src="JS/Thankyou.js"></script> -->
+    <script src="JS/NoFeedback.js"></script>
     <script src="JS/UserFeedback.js"></script>
 
 </body>
