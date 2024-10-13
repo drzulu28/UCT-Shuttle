@@ -1,0 +1,43 @@
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Aligns buttons horizontally in the center */
+    gap: 10px; /* Space between buttons */
+}
+
+.btn-logout {
+    width: 100px;                  /* Set width and height to make button a square */
+    height: 35px;
+    background-color: #e74c3c; /* Red color for Logout button */
+    color: white; /* White text for visibility */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px; /* Rounded corners */
+}
+
+.btn-review {
+    width: 100px;                  /* Set width and height to make button a square */
+    height: 35px;
+    background-color: #3498db; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px; /* Rounded corners */
+}
+.btn-submitFeedback {
+    width: 100px;                  /* Set width and height to make button a square */
+    height: 35px;
+    background-color: #3498db; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px; /* Rounded corners */
+    display: center;
+    align-items: center; /* Centers the button vertically */
+
+}
