@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Historypage.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSS/Historypage.css"> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="CSS/Buttons.css">
+
     <title>User Feedback History</title>
 </head>
 <body>
 
     <!-- Main container to wrap content -->
     <div class="container">
-        
-         <!-- Page title inside the body -->
-         <h1>User Feedback History</h1>
-
+        <!-- Page title inside the body -->
+        <h1>User Feedback History</h1>
+    
         <!-- Feedback history will be dynamically loaded here -->
         <div id="feedbackHistory"></div>
-
-        <!-- Logout Button Form -->
-        <form id="UserFeedbackHistoryForm" onsubmit="event.preventDefault(); logout();">
-            <button type="submit">Logout</button>
+    
+        <!-- Logout and Clear Button Form -->
+        <form id="UserFeedbackHistoryForm">
+            <button type="button" class="btn-logout" onclick="logout()">Logout</button>
+            <button type="button" class="btn-clear" onclick="clearStorage()">Clear</button>
+            <button type="button" class="btn-back1" onclick="handleBackSPClick()">Back</button>
         </form>
     </div>
-
-    <!-- JavaScript to handle feedback display and logout -->
+    
+    <!-- JavaScript to handle feedback display and actions -->
     <script src="JS/UserFeedbackHistory.js"></script>
+    <script src="JS/UserFeedback.js"></script>
+    <script src="JS/NoFeedback.js"></script>
 
+    
 </body>
 </html>
-
