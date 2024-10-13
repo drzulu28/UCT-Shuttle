@@ -4,7 +4,7 @@ const validLogins = [
     { username: "stu2", password: "pass2", redirectPage: "Routine/schedule.html" },
     { username: "stu3", password: "pass3", redirectPage: "Routine/schedule.html" },
     { username: "stu4", password: "pass4", redirectPage: "Routine/schedule.html" },
-    { username: "Mickey", password: "SEMpofu", redirectPage: "Routine/UserFeedbackHistory.html" }
+    { username: "Mickey", password: "SEMpofu", redirectPage: "Routine/homepage.html" }
 ];
 
 // Function to validate login credentials
