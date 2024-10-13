@@ -55,20 +55,19 @@ input[type="text"], input[type="password"] {
 
 button {
     width: 100%;
+    align-items: center;
     padding: 10px;
     background-color: navy;
-    border: 1px solid white;  /* Changed border color to white */
     color: white;
-    border-radius: 4px;
     cursor: pointer;
+    border-radius: 14px; /* Rounded corners */
 }
 #exitButton {
     width: 80px;       /* Set a fixed width for the button */
     height: 40px;       /* Set a fixed height for the button */
     background-color: navy; /* Button background color */
-    border: 1px solid white;  /* Changed border color to white */
     color: white;       /* Button text color */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 14px; /* Rounded corners */
     cursor: pointer;     /* Pointer cursor on hover */
     font-size: 16px;    /* Font size */
 }
@@ -118,9 +117,6 @@ th {
     font-size: 16px;              /* Font size for button text */
     cursor: pointer;
     background-color: navy;
-    border: 1px solid white;  /* Changed border color to white */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;                /* Use flex to center text inside the button */
     justify-content: center;      /* Center text horizontally */
     align-items: center;          /* Center text vertically */
