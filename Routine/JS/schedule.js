@@ -108,7 +108,7 @@ function updateSchedule() {
 
         scheduleTable.appendChild(headerRow);
 
-        // Determine the number of times (assuming all stops have the same number of times)
+        // Determine the number of times 
         const numTimes = selectedSchedule[0].times.length;
 
         // Create rows for times (without Time Slot labels)
