@@ -1,3 +1,13 @@
+#timesDisplay {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .time {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('BG Image/UCT Shuttle.png'); /* image URL */
