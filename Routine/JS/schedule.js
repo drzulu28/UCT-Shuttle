@@ -94,40 +94,35 @@ function updateSchedule() {
     const selectedRoute = routeSelect.value;
 
     if (selectedRoute) {
-        // Create table header
+        const selectedSchedule = schedules[selectedRoute];
+
+        // Create table header for stops
         const headerRow = document.createElement("tr");
-        const headerCell1 = document.createElement("th");
-        const headerCell2 = document.createElement("th");
-        headerCell1.textContent = "Stop";
-        headerCell2.textContent = "Departure Time";
-        headerCell2.colSpan =5;
-        headerRow.appendChild(headerCell1);
-        headerRow.appendChild(headerCell2);
+
+        // Add stops to header row (no empty first cell anymore)
+        selectedSchedule.forEach(stop => {
+            const stopCell = document.createElement("th");
+            stopCell.textContent = stop.stop;
+            headerRow.appendChild(stopCell);
+        });
+
         scheduleTable.appendChild(headerRow);
 
-        // Populate the schedule table
-        schedules[selectedRoute].forEach(stop => {
-            stop.times.forEach((time, index) => {
-                const row = document.createElement("tr");
-                const cellStop = document.createElement("td");
-                const cellTime = document.createElement("td");
+        // Determine the number of times (assuming all stops have the same number of times)
+        const numTimes = selectedSchedule[0].times.length;
 
-                cellStop.textContent = stop.stop;
-                cellTime.textContent = time; // Display each time in its own row
+        // Create rows for times (without Time Slot labels)
+        for (let i = 0; i < numTimes; i++) {
+            const timeRow = document.createElement("tr");
 
-                // If it's the first time for the stop, display it
-                if (index === 0) {
-                    row.appendChild(cellStop);
-                    row.appendChild(cellTime);
-                    scheduleTable.appendChild(row);
-                } else {
-                    // For subsequent times, just display the time with the same stop
-                    const previousRow = scheduleTable.lastElementChild; // Get the last row
-                    const cellTimePrevious = document.createElement("td");
-                    cellTimePrevious.textContent = time; // New time for the same stop
-                    previousRow.appendChild(cellTimePrevious);
-                }
+            // Add corresponding time for each stop
+            selectedSchedule.forEach(stop => {
+                const timeCell = document.createElement("td");
+                timeCell.textContent = stop.times[i]; // Get time for this stop
+                timeRow.appendChild(timeCell);
             });
-        });
+
+            scheduleTable.appendChild(timeRow);
+        }
     }
 }
