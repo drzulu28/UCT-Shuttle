@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="CSS/Style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSS/Rating.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSS/Buttons.css">
+
+</head>
+<body>
+    <div class="container3">
+        <h2>Feedback Form</h2>
+        
+        <form id="feedbackForm" onsubmit="event.preventDefault(); submitFeedback();">
+            <label for="username">Please enter your full name:</label>
+            <input type="text" id="username" name="username" placeholder="Your full name..."  required>
+            <br><br>
+            
+            <label for="course">Please enter your course of study:</label>
+            <input type="text" id="course" name="course" placeholder="Your major..."  required>
+            <br><br>
+            
+            <label for="likes">List two things you really like about the interface:</label>
+            <textarea id="likes" rows="2" cols="50" placeholder="Enter two things you really like about the interface..." required></textarea>
+            <br><br>
+            
+            <label for="flaws">List at least two key flaws:</label>
+            <textarea id="flaws" rows="2" cols="50" placeholder="Enter two key flaws..." required></textarea>
+            <br><br>
+    
+            <!-- Star Rating -->
+            <label for="rating">Rate the interface:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5" title="5 stars">☆</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4" title="4 stars">☆</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3" title="3 stars">☆</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2" title="2 stars">☆</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1" title="1 star">☆</label>
+            </div>
+            <br><br>
+
+
+            <div class="action-buttons">
+                <button class="btn-back" onclick="handleBackClick()">Back</button>
+                <button class="btn-submit">Submit</button>
+            </div>
+    
+
+        </form>
+    </div>
+    <script src="JS/NoFeedback.js"></script>
+    <script src="JS/UserFeedback.js"></script>
+
+</body>
+</html>

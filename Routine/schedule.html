@@ -1,47 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCT Shuttle Schedule</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/schedule.css">
     <link rel="stylesheet" href="CSS/Buttons.css">
 
     <script src="JS/schedule.js"></script>
 </head>
 <body>
-    <div class="container2">
-        <h2>UCT Shuttle Schedule</h2>
-        <label for="route">Select Route:</label>
-        <select id="route" onchange="updateSchedule()">
-            <option value="">--Select a route--</option>
-            <option value="Bremner-Kramer">Bremner-Kramer</option>
-            <option value="Claremont">Claremont</option>
-            <option value="Clarinus">Clarinus</option>
-            <option value="Forest Hill">Forest Hill</option>
-            <option value="Hiddingh">Hiddingh</option>
-            <option value="Liesbeeck">Liesbeeck</option>
-            <option value="Obz Square">Obz Square</option>
-            <option value="Rochester">Rochester</option>
-            <option value="Sandown">Sandown</option>
-            <option value="Tugwell">Tugwell</option>
-            <option value="Res Loop(Anti-Clockwise)">Res Loop(Anti-Clockwise)</option>
-            <option value="Res Loop(Clockwise)">Res Loop(Clockwise)</option>
+    <div class="panel-container">
+        <div class="panel">
+            <h2>UCT Shuttle Schedule</h2>
+            
+            <label for="route">Select Route:</label>
+            <select id="route" onchange="updateSchedule()">
+                <option value="">--Select a route--</option>
+                <option value="Bremner-Kramer">Bremner-Kramer</option>
+                <option value="Claremont">Claremont</option>
+                <option value="Clarinus">Clarinus</option>
+                <option value="Forest Hill">Forest Hill</option>
+                <option value="Hiddingh">Hiddingh</option>
+                <option value="Liesbeeck">Liesbeeck</option>
+                <option value="Obz Square">Obz Square</option>
+                <option value="Rochester">Rochester</option>
+                <option value="Sandown">Sandown</option>
+                <option value="Tugwell">Tugwell</option>
+                <option value="Res Loop(Anti-Clockwise)">Res Loop(Anti-Clockwise)</option>
+                <option value="Res Loop(Clockwise)">Res Loop(Clockwise)</option>
+            </select>
 
-        </select>
+            <table id="scheduleTable">
+                <!-- Schedule will be populated here -->
+            </table>
 
-        <table id="scheduleTable">
-            <!-- Schedule will be populated here -->
-        </table>
-        <!-- Feedback section -->
-        <div class="feedback-section">
-            <h2>Ratings and Review</h2>
+            <!-- Feedback section -->
+            <div class="feedback-section">
+                <h2>Ratings and Review</h2>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+                <button class="btn-review" onclick="handleNoClick()">Review</button>
+            </div>
         </div>
-        <div class="action-buttons">
-            <button class="btn-logout" onclick="logout()">Logout</button>
-            <button class="btn-review" onclick="handleNoClick()">Review</button>
-        </div>
-        <script src="JS/UserFeedbackHistory.js"></script>
-        <script src="JS/NoFeedback.js"></script>
+    </div>
 
+    <script src="JS/UserFeedbackHistory.js"></script>
+    <script src="JS/NoFeedback.js"></script>
 </body>
 </html>
