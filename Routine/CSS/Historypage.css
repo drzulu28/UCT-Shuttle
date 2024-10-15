@@ -23,6 +23,7 @@ h1 {
     color: white; /* Ensure it's white */
 }
 
+
 /* Container for feedback history with blackish background */
 .container {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
@@ -54,11 +55,8 @@ button {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 14px; /* Rounded corners */
     cursor: pointer;
     font-size: 1em;
 }
 
-button:hover {
-    background-color: #0040ff; /* Brighter blue on hover */
-}

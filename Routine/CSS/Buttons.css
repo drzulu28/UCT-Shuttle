@@ -14,6 +14,8 @@
     border: none;
     cursor: pointer;
     border-radius: 14px; /* Rounded corners */
+    display: center;
+    align-items: center; /* Centers the button vertically */
 }
 
 .btn-back, .btn-back1{
@@ -30,7 +32,7 @@
 .btn-submit, .btn-review  {
     width: 100px;                  /* Set width and height to make button a square */
     height: 35px;
-    background-color: navy; 
+    background-color: #0097c4; 
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -39,7 +41,6 @@
     border-radius: 14px; /* Rounded corners */
     display: center;
     align-items: center; /* Centers the button vertically */
-
 }
 .btn-clear{
     width: 100px;                  /* Set width and height to make button a square */
@@ -54,4 +55,3 @@
     display: center;
     align-items: center; /* Centers the button vertically */
 }
-
