@@ -1,7 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f7fa; /* Elegant light background */
-    color: #333;
+    background-image: url('BG Image/UCT Shuttle.png'); /* image URL */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,9 +12,15 @@ body {
     height: 100vh;
     text-align: center;
 }
+.panel-container{
+    background-color: rgba(0, 0, 0, 0.6); /*Black with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-h1 {
-    color: #0097c4; /* Matching title to table header color */
+h2 {
+    color: white; /* Matching title to table header color */
     margin-bottom: 20px;
 }
 
