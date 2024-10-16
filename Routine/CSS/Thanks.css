@@ -1,0 +1,102 @@
+ /* Simple reset and general styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav.navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+nav.navbar a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Feedback Section */
+.feedback-section {
+    margin-top: 30px;
+}
+
+.feedback-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-section button:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    nav.navbar a {
+        font-size: 16px;
+    }
+}

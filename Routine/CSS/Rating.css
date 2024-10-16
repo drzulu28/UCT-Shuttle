@@ -17,10 +17,10 @@
 }
 
 .rating input:checked ~ label {
-    color: gold;
+    color: #2c3e50;;
 }
 
 .rating label:hover,
 .rating label:hover ~ label {
-    color: gold;
+    color: #2c3e50;;
 }

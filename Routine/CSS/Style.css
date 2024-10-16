@@ -1,145 +1,174 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('BG Image/UCT Shuttle.png'); /* image URL */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* General reset and body styles */
+* {
     margin: 0;
-    color: white; /* Change text color for visibility */
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    background-color: rgba(0, 0, 0, 0.6); /*Black with transparency */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
 }
-.container2 {
-    background-color: rgba(0, 0, 0, 0.6); /*Black with transparency */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+
+/* Navbar styles */
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px 0;
     text-align: center;
 }
-.container3 {
-    padding: 50px;                         /* Add padding for spacing */
-    background-color: rgba(0, 0, 0, 0.6); /*Black with transparency */
-    color: white;                          /* White text color for better readability */
-    border-radius: 8px;                   /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    max-width: 100%;                        /* Set a maximum width of 90% */
-    margin: 0 auto;                       /* Center the container */
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
 
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main container for the feedback form */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: white; /* Text color for the header */
+    color: #2c3e50;
 }
 
-input[type="text"], input[type="password"] {
+/* Input and textarea styles */
+input[type="text"], textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid white;  /* Changed border color to white */
+    margin: 10px 0;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
-button {
-    
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    background-color: #0097c4;
+input[type="text"]:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Star rating styles */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.rating input {
+    display: none; /* Hide the radio buttons */
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f39c12; /* Gold color on hover or selection */
+}
+
+.rating label:active {
+    color: #e67e22;
+}
+
+/* Action buttons styling */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-back, .btn-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back {
+    background-color: #2c3e50;
     color: white;
-    cursor: pointer;
-    border-radius: 14px; /* Rounded corners */
-}
-#exitButton {
-    width: 80px;       /* Set a fixed width for the button */
-    height: 40px;       /* Set a fixed height for the button */
-    background-color:#0097c4;; /* Button background color */
-    color: white;       /* Button text color */
-    border-radius: 14px; /* Rounded corners */
-    cursor: pointer;     /* Pointer cursor on hover */
-    font-size: 16px;    /* Font size */
 }
 
-.forgot-password {
+.btn-back:hover {
+    background-color: #34495e;
+}
+
+.btn-submit {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer styles */
+footer {
     text-align: center;
-    margin-top: 10px;
-}
-.forgot-password a {
-    color: white;              /* Set the link text color to white */
-    text-decoration: none;     /* Remove the underline from the link */
-}
-
-.feedback-section {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 2px solid #ccc;
-    display: flex;               /* Align elements in a row */
-    justify-content: center;      /* Center the items horizontally */
-    align-items: center;          /* Vertically center the items */
-    gap: 20px;                    /* Add space between the paragraph and buttons */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.feedback-section button {
-    width: 45px;                  /* Set width and height to make button a square */
-    height: 35px;
-    font-size: 16px;              /* Font size for button text */
-    cursor: pointer;
-    background-color: #0097c4;
-    display: flex;                /* Use flex to center text inside the button */
-    justify-content: center;      /* Center text horizontally */
-    align-items: center;          /* Center text vertically */
-    transition: background-color 0.3s ease;
-}
-.feed-section{
-    margin-top: 0px;
-    padding-top: 20px;
-    border-top: 2px solid #ccc;
-    display: flex;               /* Align elements in a row */
-    justify-content: center;      /* Center the items horizontally */
-    align-items: center;          /* Vertically center the items */
-    gap: 20px;                    /* Add space between the paragraph and buttons */
-}
-.feed-section button {
-    width: 100px;                  /* Set width and height to make button a square */
-    height: 35px;
-    font-size: 16px;              /* Font size for button text */
-    cursor: pointer;
-    background-color:  #0097c4;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;                /* Use flex to center text inside the button */
-    justify-content: center;      /* Center text horizontally */
-    align-items: center;          /* Center text vertically */
-    transition: background-color 0.3s ease;
-}
-label {
-    display: block;            /* Block display for labels (default behavior) */
-    margin-bottom: 5px;       /* Space below labels */
-    font-weight: bold;         /* Bold text for labels */
-    text-align: left;          /* Align text to the left */
-}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
 
+    .rating {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* input[type="text"], */
-textarea {
-    width: 100%;                /* Width set to 90% of the container */
-    padding: 10px;            /* Padding inside the inputs */
-    margin: 0 auto 5px;      /* Center horizontally and space below */
-    border: 1px solid #ccc;   /* Light gray border */
-    border-radius: 4px;       /* Rounded corners */
-    font-size: 16px;          /* Font size for readability */
-    display: block;            /* Ensure they are block elements */
-}
-textarea {
-    resize: vertical;          /* Allow vertical resizing only */
+    .rating label {
+        margin: 5px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-back, .btn-submit {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

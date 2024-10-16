@@ -1,62 +1,161 @@
-/* Ensure the container takes up the full page height */
+/* General body styling */
 html, body {
-    font-family: Arial, sans-serif;
-
-    background-image: url('BG Image/UCT Shuttle.png'); /* image URL */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
-    /* background-repeat: no-repeat; Prevents the image from repeating */
-
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text for readability */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    margin: 0;
-    color: white; /* Change text color for visibility */
-}
-/* Title style */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: white; /* Ensure it's white */
-}
-
-
-/* Container for feedback history with blackish background */
-.container {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    color: white; /* White text for readability */
-    max-width: 800px;
-    margin: 0 auto; /* Center the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
-    display: flex;
     flex-direction: column;
-    justify-content: space-between; /*Push logout to the bottom*/
+    min-height: 100vh;
 }
 
-/* Feedback history styling (optional) */
-#feedbackHistory {
-    flex-grow: 1; /* Make the feedback history grow and take up space */
-    padding: 15px;
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #0097c4; /* Matching blue color */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Style for the form and button */
-#UserFeedbackHistoryForm {
-    margin-top: 20px;
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px 0;
     text-align: center;
 }
 
-button {
-    background-color: #e74c3c; /* Red color for Logout button */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 14px; /* Rounded corners */
-    cursor: pointer;
-    font-size: 1em;
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main container styling */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 90%;
+    max-width: 900px;
+    margin-top: 80px; /* Add top space for fixed navbar */
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Feedback content styling */
+.feedback-content {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Form and Button Group styling */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Button styling */
+form button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px; /* Rounded edges for a modern look */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-logout {
+    background-color: #e74c3c; /* Red button */
+    color: white;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.btn-clear {
+    background-color: #f39c12; /* Yellow button */
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+.btn-back1 {
+    background-color: #0097c4; /* Blue button */
+    color: white;
+}
+
+.btn-back1:hover {
+    background-color: #007bb5;
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

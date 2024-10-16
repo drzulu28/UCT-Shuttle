@@ -1,76 +1,76 @@
-        /* Maintain elegant background and layout style */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f7fa; /* Elegant light background */
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+/* Maintain elegant background and layout style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa; /* Elegant light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
-        h2 {
-            color: #0097c4; /* Matching title to table header color */
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
+h2 {
+    color: #0097c4; /* Matching title to table header color */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
 
-        /* Container styling */
-        .container3 {
-            width: 90%;
-            max-width: 800px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: left;
-        }
+/* Container styling */
+.container3 {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
 
-        /* Input and text area styling */
-        label {
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #333;
-        }
+/* Input and text area styling */
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-        input[type="text"], textarea {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            outline: none;
-            width: 100%;
-            margin-bottom: 20px;
-        }
+input[type="text"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-        input[type="text"]:focus, textarea:focus {
-            border-color: #0097c4;
-        }
+input[type="text"]:focus, textarea:focus {
+    border-color: #0097c4;
+}
 
-        textarea {
-            resize: vertical;
-            height: 100px;
-        }
+textarea {
+    resize: vertical;
+    height: 100px;
+}
 
-        /* Button styling */
-        button {
-            background-color: #0097c4; /* Matching button color */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer;
-            font-size: 1em;
-            width: 100%;
-            text-align: center;
-        }
+/* Button styling */
+button {
+    background-color: #0097c4; /* Matching button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
 
-        button:hover {
-            background-color: #007bb5; /* Darker shade of the button */
-        }
+button:hover {
+    background-color: #007bb5; /* Darker shade of the button */
+}
