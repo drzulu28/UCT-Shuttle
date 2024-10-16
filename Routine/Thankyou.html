@@ -1,19 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you</title>
-    <link rel="stylesheet" href="CSS/Style.css"> <!-- Link to your CSS file -->
+    <title>Thank You</title>
+    <link rel="stylesheet" href="CSS/Thanks.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <div class="container3">
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home2.html">Finder</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Main Container -->
+    <div class="container">
         <h2>Your feedback has been submitted. Thank you for your review!</h2>
-        <!-- <h2> We'll improve.</h2> -->
+        
+        <!-- Feedback Section with exit button -->
         <div class="feedback-section">
             <button id="exitButton" onclick="exitWebPage()">Okay</button>
         </div>
     </div>
 
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for exit functionality -->
     <script src="JS/Exit.js"></script>
 
 </body>

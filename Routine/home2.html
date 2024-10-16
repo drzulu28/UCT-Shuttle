@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule Finder</title>
+    
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="CSS/busFinder.css">
+    
+    <!-- Link to schedule JS script -->
+    <script src="JS/schedule.js" defer></script>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Panel Container -->
+    <div class="panel-container">
+        <h1>Bus Schedule Finder</h1>
+
+        <!-- Current Location and Destination -->
+        <div class="select-group">
+            <!-- Current Location -->
+            <div>
+                <label for="currentLocation">Current Location:</label>
+                <select id="currentLocation">
+                    <option value="">--Select a current location--</option>
+                    <option value="Tugwell">Tugwell</option>
+                    <option value="Bremner">Bremner</option>
+                    <option value="Kramer">Kramer</option>
+                    <option value="UC North">UC North</option>
+                    <option value="UC South">UC South</option>
+                    <option value="Claremont">Claremont</option>
+                    <option value="Clarinus">Clarinus</option>
+                    <option value="Forest Hill">Forest Hill</option>
+                    <option value="Groote Schuur Res">Groote Schuur Res</option>
+                    <option value="Hiddingh">Hiddingh</option>
+                    <option value="Liesbeeck">Liesbeeck</option>
+                    <option value="Obz Square">Obz Square</option>
+                    <option value="Rochester">Rochester</option>
+                    <option value="Sandown">Sandown</option>
+                </select>
+            </div>
+
+            <!-- Destination -->
+            <div>
+                <label for="destination">Destination:</label>
+                <select id="destination">
+                    <option value="">--Select a destination--</option>
+                    <option value="Tugwell">Tugwell</option>
+                    <option value="Bremner">Bremner</option>
+                    <option value="Kramer">Kramer</option>
+                    <option value="UC North">UC North</option>
+                    <option value="UC South">UC South</option>
+                    <option value="Claremont">Claremont</option>
+                    <option value="Clarinus">Clarinus</option>
+                    <option value="Forest Hill">Forest Hill</option>
+                    <option value="Groote Schuur Res">Groote Schuur Res</option>
+                    <option value="Hiddingh">Hiddingh</option>
+                    <option value="Liesbeeck">Liesbeeck</option>
+                    <option value="Obz Square">Obz Square</option>
+                    <option value="Rochester">Rochester</option>
+                    <option value="Sandown">Sandown</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button onclick="findBuses()">Show Next Shuttle</button>
+            <button onclick="showBuses()">Show Bus Schedule</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="busResults">
+            <!-- Bus results will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
