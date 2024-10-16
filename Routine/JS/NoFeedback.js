@@ -3,7 +3,6 @@ function handleNoClick() {
 }
 function handleBackClick() {
     window.location.href = 'schedule.html'; // Redirect to schedule page
-
 }
 function handleBackSPClick() {
     window.location.href = 'homepage.html'; // Redirect to homepage page
