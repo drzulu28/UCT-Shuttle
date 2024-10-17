@@ -5,19 +5,29 @@
     <title>Feedback</title>
 
     <!-- Link to external CSS files for styling -->
-    <link rel="stylesheet" href="CSS/Style.css"> <!-- Link to your general CSS -->
-    <link rel="stylesheet" href="CSS/Rating.css"> <!-- Link to your rating CSS -->
+    <link rel="stylesheet" href="CSS/Style.css"> 
+    <link rel="stylesheet" href="CSS/Rating.css"> <!-- Link to rating CSS -->
+    <!-- <link rel="stylesheet" href="CSS/Thanks.css"> Link to CSS file -->
+
 
 </head>
 <body>
     <!-- Main Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="home2.html">Home</a></li>
+            <li><a href="homepage2.html">Home</a></li>
+            <li><a href="home2.html">Search</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="feedback.html">Feedback</a></li> -->
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <!-- Dropdown for Logout -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="logout.html">Logout</a>
+                </div>
+            </li>     
+         </ul>
     </nav>
 
 
@@ -81,5 +91,7 @@
     <!-- JavaScript files for functionality -->
     <script src="JS/NoFeedback.js"></script>
     <script src="JS/UserFeedback.js"></script>
+    <!-- <script src="JS/SignIn.js"></script> -->
+
 </body>
 </html>
