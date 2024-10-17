@@ -21,7 +21,7 @@ function login() {
         localStorage.setItem('redirectPage', user.redirectPage);
         displayWelcomeMessage(username);
         // alert('Login successful!');
-       // history.pushState(null, null, user.redirectPage);  // Disable back button
+        history.pushState(null, null, user.redirectPage);  // Disable back button
 
         // Redirect to the appropriate page after successful login
         window.location.href = user.redirectPage;  
@@ -31,10 +31,10 @@ function login() {
     }
 }
 // Disable back button and redirect to the current page if back is pressed
-// window.onpopstate = function() {
-//     // Prevent going back to the login page
-//     history.pushState(null, null, window.location.href);
-// };
+window.onpopstate = function() {
+    // Prevent going back to the login page
+    history.pushState(null, null, window.location.href);
+};
 
 // Validate form input before submitting
 function validateLogin(event) {
