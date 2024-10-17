@@ -28,7 +28,7 @@
 
             <!-- Button Group -->
             <div class="button-group">
-                <button type="submit">Login</button>
+                <button type="submit" id="loginButton">Login</button>
                 <button type="button" onclick="cancelLogin()">Cancel</button>
             </div>
         </form>
@@ -39,6 +39,10 @@
         </div>
     </div>
 
+    <!-- Welcome Message Section -->
+    <div id="welcomeMessage" style="display:none;"></div>
+    <button id="logoutButton" style="display:none;" onclick="logout()">Logout</button>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
@@ -48,3 +52,4 @@
     <script src="Routine/JS/SignIn.js"></script>
 </body>
 </html>
+
