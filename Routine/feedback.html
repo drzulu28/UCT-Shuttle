@@ -1,36 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
-    <link rel="stylesheet" href="CSS/Style.css"> <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="CSS/Rating.css"> <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="CSS/Buttons.css">
+
+    <!-- Link to external CSS files for styling -->
+    <link rel="stylesheet" href="CSS/Style.css"> <!-- Link to your general CSS -->
+    <link rel="stylesheet" href="CSS/Rating.css"> <!-- Link to your rating CSS -->
 
 </head>
 <body>
-    <div class="container3">
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Container for the feedback form -->
+    <div class="container">
         <h2>Feedback Form</h2>
-        
+
+        <!-- Feedback form with fields and star rating -->
         <form id="feedbackForm" onsubmit="event.preventDefault(); submitFeedback();">
+            <!-- Full name input field -->
             <label for="username">Please enter your full name:</label>
-            <input type="text" id="username" name="username" placeholder="Your full name..."  required>
+            <input type="text" id="username" name="username" placeholder="Your full name..." required>
             <br><br>
             
+            <!-- Course input field -->
             <label for="course">Please enter your course of study:</label>
-            <input type="text" id="course" name="course" placeholder="Your major..."  required>
+            <input type="text" id="course" name="course" placeholder="Your major..." required>
             <br><br>
-            
+
+            <!-- Likes text area -->
             <label for="likes">List two things you really like about the interface:</label>
-            <textarea id="likes" rows="2" cols="50" placeholder="Enter two things you really like about the interface..." required></textarea>
+            <textarea id="likes" name="likes" rows="2" cols="50" placeholder="Enter two things you really like about the interface..." required></textarea>
             <br><br>
             
+            <!-- Flaws text area -->
             <label for="flaws">List at least two key flaws:</label>
-            <textarea id="flaws" rows="2" cols="50" placeholder="Enter two key flaws..." required></textarea>
+            <textarea id="flaws" name="flaws" rows="2" cols="50" placeholder="Enter two key flaws..." required></textarea>
             <br><br>
-    
-            <!-- Star Rating -->
+
+            <!-- Star Rating Section -->
             <label for="rating">Rate the interface:</label>
             <div class="rating">
                 <input type="radio" id="star5" name="rating" value="5" />
@@ -45,12 +62,23 @@
                 <label for="star1" title="1 star">☆</label>
             </div>
             <br><br>
+
+            <!-- Action buttons (Back and Submit) -->
             <div class="action-buttons">
-                <button class="btn-back" onclick="handleBackClick()">Back</button>
-                <button class="btn-submit">Submit</button>
+                <!-- Back button with functionality -->
+                <button type="button" class="btn-back" onclick="handleBackClick()">Back</button>
+                <!-- Submit button -->
+                <button type="submit" class="btn-submit">Submit</button>
             </div>
         </form>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript files for functionality -->
     <script src="JS/NoFeedback.js"></script>
     <script src="JS/UserFeedback.js"></script>
 </body>
