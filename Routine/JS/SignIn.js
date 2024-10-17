@@ -1,28 +1,66 @@
+// Modify this section based on the existing logic
 const validLogins = [
-    { username: "NqobaniX124", password: "DevZulu900", redirectPage: "Routine/home2.html" },
-    { username: "stu2", password: "pass2", redirectPage: "Routine/home2.html" },
-    { username: "stu3", password: "pass3", redirectPage: "Routine/home2.html" },
-    { username: "stu4", password: "pass4", redirectPage: "Routine/home2.html" },
+    { username: "NqobaniX124", password: "DevZulu900", redirectPage: "Routine/homepage2.html" },
+    { username: "stu2", password: "pass2", redirectPage: "Routine/homepage2.html" },
+    { username: "stu3", password: "pass3", redirectPage: "Routine/homepage2.html" },
+    { username: "stu4", password: "pass4", redirectPage: "Routine/homepage2.html" },
     { username: "Mickey", password: "SEMpofu", redirectPage: "Routine/homepage.html" }
 ];
 
-// Function to validate login credentials
-function validateLogin(event) {
-    event.preventDefault(); // Prevent form submission
+// Login function
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-    // Retrieve the entered username and password
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
+    // Check if the username and password match any of the valid logins
+    const user = validLogins.find(user => user.username === username && user.password === password);
 
-    // Find the valid login details that match the entered username and password
-    const userLogin = validLogins.find(login => 
-        login.username === username && login.password === password
-    );
+    if (user) {
+        // Save username and redirect page to localStorage
+        localStorage.setItem('loggedInUser', username);
+        localStorage.setItem('redirectPage', user.redirectPage);
+        displayWelcomeMessage(username);
+        // alert('Login successful!');
+        history.pushState(null, null, user.redirectPage);  // Disable back button
 
-    if (userLogin) {
-        // Redirect to the specific page for the logged-in user
-        window.location.href = userLogin.redirectPage;
+        // Redirect to the appropriate page after successful login
+        window.location.href = user.redirectPage;  
+
     } else {
-        alert("Invalid username or password.");
+        alert('Invalid username or password!');
     }
 }
+// Disable back button and redirect to the current page if back is pressed
+window.onpopstate = function() {
+    // Prevent going back to the login page
+    history.pushState(null, null, window.location.href);
+};
+
+// Validate form input before submitting
+function validateLogin(event) {
+    event.preventDefault();  // Prevent the default form submission
+    login();  // Call the login function
+}
+
+// Function to display a welcome message
+function displayWelcomeMessage(username) {
+// redirect to 'hompepage2.html'
+    window.location.href = "Routine/homepage2.html";
+}
+
+// Cancel login and clear input fields
+function cancelLogin() {
+    document.getElementById('username').value = '';
+    document.getElementById('password').value = '';
+}
+
+// Function to check login status on page load (optional for persistence)
+function checkLoginStatus() {
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (loggedInUser) {
+        displayWelcomeMessage(loggedInUser);
+    }
+}
+
+// Call to check login status on page load
+checkLoginStatus();
