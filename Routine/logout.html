@@ -12,20 +12,8 @@
         <link rel="stylesheet" href="style.css"> <!-- Optional CSS link if needed -->
     </head>
     <body>
-    
-        <!-- JavaScript to handle redirection and logout -->
-        <script>
-            (function autoLogout() {
-                // Remove user session data
-                localStorage.removeItem('loggedInUser');
-                localStorage.removeItem('redirectPage');
+        <script src="JS/autoLogout.js" defer></script>
 
-                // Redirect to the login page
-                window.location.href = "../index.html"; 
-                history.pushState(null, null, user.redirectPage);  // Disable back button
-
-            })();
-        </script>
     
     </body>
     </html>
