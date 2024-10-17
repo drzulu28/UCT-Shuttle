@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logout</title>
+        <link rel="stylesheet" href="style.css"> <!-- Optional CSS link if needed -->
+    </head>
+    <body>
+    
+        <!-- JavaScript to handle redirection and logout -->
+        <script>
+            (function autoLogout() {
+                // Remove user session data
+                localStorage.removeItem('loggedInUser');
+                localStorage.removeItem('redirectPage');
+
+                // Redirect to the login page
+                window.location.href = "../SignIn.html"; 
+                history.pushState(null, null, user.redirectPage);  // Disable back button
+
+            })();
+        </script>
+    
+    </body>
+    </html>
+    

@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <link rel="stylesheet" href="CSS/Thanks.css"> <!-- Link to CSS file -->
+
 </head>
 <body>
 
     <!-- Main Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="home2.html">Finder</a></li>
+            <li><a href="homepage2.html">Home</a></li>
+            <li><a href="home2.html">Search</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="feedback.html">Feedback</a></li> -->
             <li><a href="contact.html">Contact</a></li>
+
+            <!-- Dropdown for Logout -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="logout.html">Logout</a>
+                </div>
+            </li>
         </ul>
     </nav>
-
 
     <!-- Main Container -->
     <div class="container">
@@ -36,6 +45,8 @@
 
     <!-- Script for exit functionality -->
     <script src="JS/Exit.js"></script>
+    <!-- <script src="JS/SignIn.js"></script> -->
+
 
 </body>
 </html>

@@ -5,20 +5,31 @@
     <title>UCT Shuttle Schedule</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/schedule.css"> <!-- Schedule styling -->
+
     <script src="JS/schedule.js" defer></script>
+    <!-- <script src="JS/SignIn.js" defer></script> -->
+
 </head>
 <body>
-    <!-- Main Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="home2.html">Home</a></li>
+            <li><a href="homepage2.html">Home</a></li>
+            <li><a href="home2.html">Search</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="feedback.html">Feedback</a></li> -->
             <li><a href="contact.html">Contact</a></li>
+
+            <!-- Dropdown for Logout -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="logout.html">Logout</a>
+                </div>
+            </li>
         </ul>
     </nav>
-
-
+    <!-- Main Content Section -->
+    <main>
     <div class="panel-container">
         <h2>UCT Shuttle Schedule</h2>
         
@@ -45,38 +56,36 @@
         <!-- Schedule table that will be populated dynamically -->
         <div class="schedule-display">
             <table id="scheduleTable">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Stop</th>
-                    </tr>
-                </thead>
+
                 <tbody>
                     <!-- Schedule rows will be dynamically inserted here -->
                 </tbody>
             </table>
         </div>
-
-        <!-- Feedback Section for ratings and reviews -->
-        <div class="feedback-section">
-            <h2>Ratings and Reviews</h2>
-            <p>Please rate your shuttle experience.</p>
-        </div>
-
-        <!-- Action buttons: Logout and Review -->
-        <div class="action-buttons">
-            <button class="btn-logout" onclick="logout()">Logout</button>
-            <button class="btn-review" onclick="handleNoClick()">Review</button>
-        </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
-    </footer>
+    <!-- Feedback Section for ratings and reviews -->
+    <div class="feedback-section">
+        <h2>Ratings and Reviews</h2>
+        <p>Please rate your shuttle experience.</p>
+    </div>
+
+    <!-- Action buttons: Logout and Review -->
+    <div class="action-buttons">
+        <!-- <button class="btn-logout" onclick="logout()">Logout</button> -->
+        <button class="btn-review" onclick="handleNoClick()">Comment</button>
+    </div>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
+</footer>
 
     <!-- External JS Scripts -->
     <script src="JS/UserFeedbackHistory.js" defer></script>
     <script src="JS/NoFeedback.js" defer></script>
+    <!-- <script src="JS/SignIn.js"></script> -->
+
 </body>
 </html>

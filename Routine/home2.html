@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="CSS/Thanks.css"> <!-- Link to CSS file -->
     <link rel="stylesheet" href="CSS/busFinder.css">
     
     <!-- Link to schedule JS script -->
@@ -18,10 +19,18 @@
     <!-- Main Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="home2.html">Home</a></li>
+            <li><a href="homepage2.html">Home</a></li>
+            <li><a href="home2.html">Search</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="feedback.html">Feedback</a></li> -->
             <li><a href="contact.html">Contact</a></li>
+            <!-- Dropdown for Logout -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="logout.html">Logout</a>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -74,16 +83,15 @@
                     <option value="Sandown">Sandown</option>
                 </select>
             </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="action-buttons">
-            <button onclick="findBuses()">Show Next Shuttle</button>
-            <button onclick="showBuses()">Show Bus Schedule</button>
+            <!-- Action Buttons -->
+            <div >
+                <button  id="searchButton" onclick="findBuses()">Find bus</button>
+                <!-- <button onclick="showBuses()">Show Bus Schedule</button> -->
+            </div>
         </div>
 
         <!-- Results Section -->
-        <div id="busResults">
+        <div id="busResults" class="select-group">
             <!-- Bus results will be displayed here -->
         </div>
     </div>
@@ -92,6 +100,7 @@
     <footer>
         <p>&copy; 2024 University Shuttle Service. All rights reserved.</p>
     </footer>
+    <!-- <script src="JS/SignIn.js"></script> -->
 
 </body>
 </html>

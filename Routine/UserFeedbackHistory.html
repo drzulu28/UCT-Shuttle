@@ -9,6 +9,8 @@
 
     <!-- Link to external CSS files -->
     <link rel="stylesheet" href="CSS/Historypage.css"> <!-- Styles for the page content -->
+    <link rel="stylesheet" href="CSS/Thanks.css"> <!-- Link to CSS file -->
+
 
     <title>Feedback History</title>
 </head>
@@ -16,13 +18,20 @@
     <!-- Main Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="home2.html">Home</a></li>
+            <li><a href="homepage2.html">Home</a></li>
+            <li><a href="home2.html">Search</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="feedback.html">Feedback</a></li> -->
             <li><a href="contact.html">Contact</a></li>
+            <!-- Dropdown for Logout -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="logout.html">Logout</a>
+                </div>
+            </li>
         </ul>
     </nav>
-
 
     <!-- Main container to wrap content -->
     <div class="container">
@@ -30,7 +39,9 @@
         <h1>Feedback History</h1>
     
         <!-- Feedback history will be dynamically loaded here -->
-        <div id="feedbackHistory" class="feedback-content"></div>
+        <div id="feedbackHistory" class="feedback-content">
+            <!-- Dynamic content will be inserted here via JS -->
+        </div>
     </div>
 
     <!-- Footer -->
@@ -42,6 +53,8 @@
     <script src="JS/UserFeedbackHistory.js"></script>
     <script src="JS/UserFeedback.js"></script>
     <script src="JS/NoFeedback.js"></script>
+    <!-- <script src="JS/SignIn.js"></script> -->
 
 </body>
 </html>
+
