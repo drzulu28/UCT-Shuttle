@@ -34,12 +34,6 @@ function validateLogin(event) {
     login();  // Call the login function
 }
 
-// Function to display a welcome message
-function displayWelcomeMessage(username) {
-// redirect to 'hompepage2.html'
-    window.location.href = "Routine/homepage2.html";
-}
-
 // Cancel login and clear input fields
 function cancelLogin() {
     document.getElementById('username').value = '';
