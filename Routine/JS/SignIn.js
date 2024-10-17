@@ -19,10 +19,6 @@ function login() {
         // Save username and redirect page to localStorage
         localStorage.setItem('loggedInUser', username);
         localStorage.setItem('redirectPage', user.redirectPage);
-        displayWelcomeMessage(username);
-        // alert('Login successful!');
-        history.pushState(null, null, user.redirectPage);  // Disable back button
-
         // Redirect to the appropriate page after successful login
         window.location.href = user.redirectPage;  
 
@@ -30,11 +26,7 @@ function login() {
         alert('Invalid username or password!');
     }
 }
-// Disable back button and redirect to the current page if back is pressed
-window.onpopstate = function() {
-    // Prevent going back to the login page
-    history.pushState(null, null, window.location.href);
-};
+
 
 // Validate form input before submitting
 function validateLogin(event) {
