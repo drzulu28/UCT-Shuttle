@@ -14,7 +14,7 @@ function goToPage(page) {
         localStorage.removeItem('redirectPage');
 
         // Redirect to login page (e.g., index.html)
-        window.location.href = "../Signin.html";  // Replace with the actual login page
+        window.location.href = "../index.html";  // Replace with the actual login page
 
     }
 }
