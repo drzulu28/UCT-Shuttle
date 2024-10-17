@@ -4,7 +4,7 @@
     localStorage.removeItem('redirectPage');
 
     // Redirect to the login page
-    window.location.href = "../SignIn.html"; 
+    window.location.href = "../index.html"; 
     history.pushState(null, null, user.redirectPage);  // Disable back button
 
 })();
