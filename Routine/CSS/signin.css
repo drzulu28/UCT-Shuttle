@@ -12,12 +12,13 @@ body {
 
 /* Container styling */
 .container {
-    background-color: #fff;
+    background-color: #f9f9f9; /* Light gray for a clean, modern look */
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 12px; /* Slightly more rounded for a softer appearance */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer, larger shadow for a more modern effect */
+    width: 320px; /* Slightly wider to balance the look */
     text-align: center;
+    border: 1px solid #e0e0e0; /* Soft border to add definition */
 }
 
 h2 {

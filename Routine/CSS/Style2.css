@@ -1,0 +1,148 @@
+/* General styling for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Main container styling */
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    display: block;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Action buttons styling */
+#actionButtons {
+    margin-top: 20px;
+}
+
+#nextButton, #seeButton {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#nextButton:hover, #seeButton:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="password"], button[type="submit"], #nextButton, #seeButton {
+        width: 100%;
+    }
+
+    #actionButtons {
+        margin-top: 20px;
+    }
+}

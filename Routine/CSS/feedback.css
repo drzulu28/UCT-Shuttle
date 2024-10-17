@@ -1,64 +1,66 @@
-/* Maintain elegant background and layout style */
+/* General Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f7fa; /* Elegant light background */
-    color: #333;
+    color: #333; /* Dark text for readability */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full height of the screen */
     text-align: center;
 }
 
+/* Header Styling */
 h2 {
-    color: #0097c4; /* Matching title to table header color */
+    color: #0097c4; /* Matching title color to button and header */
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2em; /* Large and bold heading */
 }
 
-/* Container styling */
+/* Main Container Styling */
 .container3 {
     width: 90%;
-    max-width: 800px;
+    max-width: 800px; /* Restricts the max width */
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
     padding: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: space-between; /* Ensures spacing between elements */
+    text-align: left; /* Aligns text to the left */
 }
 
-/* Input and text area styling */
+/* Label and Input Styling */
 label {
-    font-size: 16px;
+    font-size: 16px; /* Clear and readable */
     margin-bottom: 10px;
-    color: #333;
+    color: #333; /* Dark text for visibility */
 }
 
+/* Input and Textarea Styling */
 input[type="text"], textarea {
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-    margin-bottom: 20px;
+    font-size: 16px; /* Consistent font size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded edges */
+    outline: none; /* Removes outline on focus */
+    width: 100%; /* Full width to align with form */
+    margin-bottom: 20px; /* Spacing between inputs */
 }
 
 input[type="text"]:focus, textarea:focus {
-    border-color: #0097c4;
+    border-color: #0097c4; /* Color change on focus for clear input indication */
 }
 
 textarea {
-    resize: vertical;
-    height: 100px;
+    resize: vertical; /* Allows vertical resizing */
+    height: 100px; /* Default height for textarea */
 }
 
-/* Button styling */
+/* Button Styling */
 button {
     background-color: #0097c4; /* Matching button color */
     color: white;
@@ -67,10 +69,11 @@ button {
     border-radius: 5px; /* Rounded corners */
     cursor: pointer;
     font-size: 1em;
-    width: 100%;
+    width: 100%; /* Full width for better alignment */
     text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
-    background-color: #007bb5; /* Darker shade of the button */
+    background-color: #007bb5; /* Darker shade for hover effect */
 }

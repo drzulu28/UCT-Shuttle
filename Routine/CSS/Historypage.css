@@ -1,15 +1,15 @@
 /* General body styling */
-html, body {
+ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Light background */
     color: #333; /* Dark text for readability */
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
 }
 
 /* Navbar styling */
@@ -17,9 +17,6 @@ html, body {
     width: 100%;
     background-color: #0097c4; /* Matching blue color */
     padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
 }
 
@@ -71,7 +68,6 @@ html, body {
     text-decoration: underline;
 }
 
-
 /* Main container styling */
 .container {
     background-color: #ffffff;
@@ -82,6 +78,8 @@ html, body {
     max-width: 900px;
     margin-top: 80px; /* Add top space for fixed navbar */
     text-align: center;
+    flex-grow: 1; /* Allow the container to take up available space */
+    margin-bottom: 20px; /* Ensure space between container and footer */
 }
 
 /* Title styling */
@@ -151,11 +149,11 @@ form button {
 
 /* Footer styling */
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative; /* Ensure the footer is relative to its content */
+    margin-top: 20px; /* Space between container and footer */
 }
